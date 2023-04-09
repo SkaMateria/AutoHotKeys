@@ -11,7 +11,7 @@ on := False
 CapsLock:: {
   Global on := !on
 ;Makes a beep for when the toggle is activated (frequency, duration)
-  SoundBeep, 1000 + 500 * on
+  SoundBeep(1000, 150)
 }
 #HotIf on
 ~#Lbutton:: {
