@@ -25,4 +25,8 @@ CapsLock:: {
   ;Clickdrag using relative window
 }
 
+~$F2:: {
+  ;insert text into scrcpy
+}
+
 F10::ExitApp
