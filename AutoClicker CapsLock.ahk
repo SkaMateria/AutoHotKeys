@@ -14,11 +14,15 @@ CapsLock:: {
 ~$LButton:: { 
     While GetKeyState("LButton", "P") {
       Click ("D")
-      Sleep(Random(25, 43))
+      Sleep(Random(31, 58))
       Click ("U")
-      Sleep(Random(159, 215))
+      Sleep(Random(175, 216))
     }
 }
 #HotIf
+
+~$F1:: {
+  ;Clickdrag using relative window
+}
 
 F10::ExitApp
