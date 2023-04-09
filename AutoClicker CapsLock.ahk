@@ -10,6 +10,14 @@ CapsLock:: {
   SoundBeep 600 + 130 * on
 }
 
+if (on := true {
+  TrayTip "AutoClicker is ON", "NOTICE:", 4
+}
+
+if (on := false) {
+  TrayTip "AutoClicker is OFF", 
+}
+
 #HotIf on
 ~$LButton:: { 
     While GetKeyState("LButton", "P") {
