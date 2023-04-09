@@ -10,13 +10,19 @@ CapsLock:: {
   SoundBeep 600 + 130 * on
 }
 
-if (on := true {
-  TrayTip "AutoClicker is ON", "NOTICE:", 4
-}
+;if (on := false) 
+  ;{
+    ;TrayTip "AutoClicker is ON", "NOTICE:", 4
+    ;}
+  ;else if (on := true)
+    ;{
+      ;TrayTip "AutoClicker is OFF", "NOTICE:", 4
+    ;}
+    ;else
+      ;{
+        ;TrayTip "I don't know", "Like what?"
+      ;}
 
-if (on := false) {
-  TrayTip "AutoClicker is OFF", 
-}
 
 #HotIf on
 ~$LButton:: { 
