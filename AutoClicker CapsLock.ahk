@@ -13,15 +13,19 @@ CapsLock:: {
 ;Makes a beep for when the toggle is activated (frequency, duration)
   SoundBeep(1000, 150)
 }
+;executes if caplock is on(is "hot") 
 #HotIf on
+;left mouse click will repeat while physical left mouse click is pressed ("P")
 ~#Lbutton:: {
   While GetKeyState("LButton", "P") {
+;manually set but might test out the regular one. Forum mentioned this might be more compatible with picky games
     Click ("D")
     Sleep(20)
     Click ("U")
     Sleep(180)
   }
 }
+;closes AutoHotKey script when you press F10, so you can get your PRECIOUS capslock back
 #HotIf
 
 F10:: ExitApp
